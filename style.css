@@ -1,0 +1,105 @@
+@import url('Monoton.ttf');
+@import url('Monaco.ttf');
+
+body {
+    font-family: 'Monoton', sans-serif;
+    background-color: tomato;   /* Color del fondo */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#appCalc {
+    height: 600px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #bb1414;    /* Color del contorno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+#appCalc form {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);   /* Color de la calculadora */
+    border-radius: 8px;
+}
+
+#operated-field {
+    height: 16%;
+    width: 90%;
+    cursor: default;
+    font-family: 'Monoton', sans-serif;   
+    background-color: rgb(0, 0, 0);   /* Color de la pantalla de arriba */
+    color: rgb(193, 193, 193);
+    padding: 15px;
+    text-align: right;
+    font-size: 40px;
+    border: 0;
+    outline: none;
+}
+
+#answer-field {
+    height: 16%;
+    width: 90%;
+    cursor: default;
+    font-family: 'Monoton', sans-serif;              
+    background-color: rgb(0, 0, 0);   /* Color de la pantalla de abajo */
+    color: white;
+    padding: 15px;
+    text-align: right;
+    font-size: 70px;
+    border: 0;
+    outline: none;
+}
+
+#appCalc input[type="button"], input[type="reset"] {
+    height: 81px;
+    width: 22.6%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+    padding: 18px;
+    margin: 3px;
+    border: 0;
+    border-radius: 100%;
+}
+
+/* Animacion al clickear botones */
+.orange:active,
+.gray:active,
+.c:active {
+    transform: translateY(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade en botones al pasar mouse por arriba */
+.orange:hover,
+.gray:hover,
+.c:hover {
+    background-color: orangered;
+}
+
+/* Colores de botones en general */
+#appCalc .orange {
+    background-color: rgb(253, 149, 3) !important;
+    color: white !important;
+}
+
+#appCalc .gray {
+    background-color: rgb(51, 51, 51);
+    color: white !important;
+}
+
+#appCalc .c {
+    background-color: #bb1414 !important;
+    color: white !important;
+}
